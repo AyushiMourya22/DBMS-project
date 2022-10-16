@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSGHA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=PT+Serif&family=Playfair+Display:ital,wght@0,400;0,500;1,700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            font-family: 'Playfair Display', serif;
+            font-family: 'PT Serif', serif;
+            background-color: #ede0d4;
+            margin: 0px;
+            color: #3d251e;
+        }
+
+        header {
+            border: 2px solid white;
+            margin: 0px;
+            background-color: white;
+            /* position: fixed; */
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .logo img {
+            width: 59px;
+            height: 59px;
+
+        }
+
+        .nav ul {
+            overflow: auto;
+            margin-top: 20px;
+            width: 900px;
+        }
+
+        .nav li {
+            width: 150px;
+            float: left;
+            list-style: none;
+            text-align: center;
+            
+        }
+
+        .nav li a {
+            text-decoration: none;
+            color: #3d251e;
+            font-weight: bold;
+            font-size: 20px;
+
+        }
+
+        .log ul {
+            margin-right: 10px;
+            overflow: auto;
+        }
+
+        .log li {
+            float: left;
+            list-style: none;
+            margin: 5px 5px;
+
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+
+        .log li a {
+            text-decoration: none;
+            color: #3d251e;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        #active{
+            background-color:#b99976; 
+        }
+        #active a{
+            color: white;
+
+        }
+        #head {
+            text-align: center;
+            font-size: 40px;
+            margin: 0px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .content {
+            border: 1px solid white;
+            border-radius: 30px;
+            margin: 40px 10px 30px 10px;
+            background-color: white;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+            display: flex;
+            align-content: space-between;
+            
+
+        }
+
+        /* .con {
+            width: 950px;
+
+        }
+
+        .con p {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .con h2 {
+            text-align: center;
+            padding-left: 10px;
+        } */
+        .item1{
+            padding: 5pz 10px 5px 10px;
+            width: 100%;
+        }
+        .item1{
+            padding-left: 20px;
+        }
+        .item2{
+            padding: 5px 10px 5px 10px;
+            width: 100%;
+        }
+        .item2 h2{
+            text-align: right;
+            padding-right: 20px;
+            
+        }
+        .item img{
+            width: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="">
+            </div>
+            <div class="nav">
+                <ul>
+                    <li>
+                        <a href="home.html">HOME</a>
+                    </li>
+                    <li id="active">
+                        <a href="about.html">ABOUT</a>
+                    </li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="complaints.html">COMPLAINTS</a></li>
+                    <li> <a href="gallery.html">GALLERY</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <div class="log">
+                <ul>
+                    <li><a href="#">LOGIN</a></li>
+                    <li><a href="#">SIGNIN</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <p id="head">ABOUT</p>
+    <div class="content">
+    
+            <div class="item1">
+
+                <h2>HISTORY</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae laboriosam, perferendis laborum cum
+                    magni consectetur? Ea quam ad ipsum iste adipisci obcaecati soluta, dolorum quas optio tempora, facere
+                    consectetur praesentium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem beatae iure
+                    in officia culpa facere consectetur odio distinctio mollitia sed aliquam incidunt porro voluptate,
+                    laboriosam ex ipsam accusantium quaerat quam!</p>
+                </div>
+            
+                <div class="item">
+                    <img src="logo.png" alt="">
+                </div>
+    </div>
+    <div class="content">
+        
+            <div class="item">
+                <img src="logo.png" alt="">
+            </div>
+       
+            <div class="item2">
+            <h2>LOCATION</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, provident rerum eos atque ad
+                excepturi fugit repudiandae totam id unde officia temporibus obcaecati earum, explicabo inventore nobis
+                molestiae eius magnam adipisci! Cum aut praesentium, tempore explicabo in non corporis optio vitae earum
+                odit, tempora aperiam aliquam architecto inventore expedita qui.</p>
+            </div>
+    </div>
+    <div class="content">
+       <div class="item1">
+
+           <h2>WARDEN</h2>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum iusto debitis aperiam illo doloribus
+               eligendi, quo iste quia adipisci consectetur vero corporis. Eum adipisci pariatur doloribus quibusdam
+               necessitatibus deserunt facere perspiciatis corrupti exercitationem, magni fuga mollitia harum quasi
+               distinctio ut incidunt, vitae error accusantium, iusto qui sequi temporibus consequatur obcaecati! Natus
+               repellendus dolorum maiores facere, doloremque ea voluptate accusantium impedit provident labore cumque,
+               iusto suscipit quaerat beatae nesciunt quidem exercitationem.</p>
+            </div>
+            <div class="item">
+                <img src="logo.png" alt="">
+            </div>
+       
+    </div>
+    <div class="content">
+        <div class="item">
+            <img src="logo.png" alt="">
+        </div>
+        <div class="item2">
+
+            <h2>STAFF</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem minima, consequatur obcaecati commodi
+                incidunt neque esse vero eligendi nulla non fugit eos ipsum quaerat repellendus doloremque? Voluptatem
+                illo magni, culpa fugit commodi ratione, quos praesentium maxime soluta repellat dolore voluptas rem, ab
+                facere fugiat hic beatae quam. Odio, nam quis. Esse maiores illum iure itaque adipisci! Sunt odio iure
+                voluptas!</p>
+            </div>
+     
+    </div>
+</body>
+
+</html>

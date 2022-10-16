@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSGHA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=PT+Serif&family=Playfair+Display:ital,wght@0,400;0,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            font-family: 'Playfair Display', serif;
+            font-family: 'PT Serif', serif;
+            background-color: #ede0d4;
+            margin: 0px;
+            color: #3d251e;
+        }
+
+        header {
+            border: 2px solid white;
+            margin: 0px;
+            background-color: white;
+            /* position: fixed; */
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .logo img {
+            width: 59px;
+            height: 59px;
+
+        }
+
+        .nav ul {
+            overflow: auto;
+            margin-top: 20px;
+            width: 900px;
+        }
+
+        .nav li {
+            width: 150px;
+            float: left;
+            list-style: none;
+            text-align: center;
+            
+        }
+
+        .nav li a {
+            text-decoration: none;
+            color: #3d251e;
+            font-weight: bold;
+            font-size: 20px;
+
+        }
+
+        .log ul {
+            margin-right: 10px;
+            overflow: auto;
+        }
+
+        .log li {
+            float: left;
+            list-style: none;
+            margin: 5px 5px;
+
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+
+        .log li a {
+            text-decoration: none;
+            color: #3d251e;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        #active{
+            background-color:#b99976; 
+        }
+        #active a{
+            color: white;
+
+        }
+        
+        #head {
+            text-align: center;
+            font-size: 40px;
+            margin: 0px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        
+        #main {
+            margin: 30px 10px 30px 10px;
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        #form {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        input[type=text] {
+            height: 30px;
+            border-color: white;
+            border-color: white;
+            width: 400px;
+            border-radius: 10px;
+        }
+        
+        input[type=email] {
+            height: 30px;
+            border-color: white;
+            width: 400px;
+            border-radius: 10px;
+        }
+        
+        textarea {
+            border-radius: 10px;
+            border: 1.7px solid white;
+            
+        }
+        
+        #form div {
+            margin: 20px 10px 10px 10px;
+            
+        }
+        
+        .con {
+            width: 50%;
+        }
+        
+        .c {
+            display: flex;
+            flex-direction: column;
+            margin: 20px 0px 10px 0px;
+            width: 80%;
+        }
+        
+        .c div {
+            margin: 20px 20px 10px 20px;
+            
+        }
+        
+        .content {
+            width: 100%;
+            border: 1px solid white;
+            border-radius: 30px;
+            margin: 20px 0px 10px 0px;
+            background-color: white;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+            ;
+        }
+        
+        .content p {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        
+        .content h2 {
+            padding-left: 10px;
+            padding-right: 10px;
+            display: inline;
+        }
+        
+        .content span {
+            padding-left: 30px;
+            margin-top: 3px;
+            padding-top: 3px;
+            
+        }
+        
+        #form {
+            margin: 50px 60px 20px 130px;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 48
+        }
+        #button{
+            margin-top: 20px;
+            font-size: 20px;
+            position: relative;
+            height: 50px;
+            left: 140px;
+            width: 150px;
+            background-color: #ddb892;
+            border-color:#ddb892;
+            color: #3d251e;
+            
+        }
+        </style>
+
+</style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="">
+            </div>
+            <div class="nav">
+                <ul>
+                    <li>
+                        <a href="home.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="about.html">ABOUT</a>
+                    </li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="complaints.html">COMPLAINTS</a></li>
+                    <li> <a href="gallery.html">GALLERY</a></li>
+                    <li id="active"><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <div class="log">
+                <ul>
+                    <li><a href="#">LOGIN</a></li>
+                    <li><a href="#">SIGNIN</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <p id="head">CONTACT US</p>
+    <div id="main">
+        <div class="con">
+            <div id="c">
+                <div class="content">
+                    <span class="material-symbols-outlined">
+                        location_on
+                    </span>
+                    <h2>Our Office Address</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium consequatur delectus eos,
+                        doloremque quibusdam quo quidem non neque quasi? Velit cumque officia cupiditate voluptas quia
+                        porro dolor minima a beatae ullam harum, placeat sed.
+                    </p>
+                </div>
+                <div class="content">
+                    <span class="material-symbols-outlined">
+                        mail
+                    </span>
+                    <h2>General queries</h2>
+                    <p>
+                        msgh@gmail.com
+                    </p>
+                </div>
+                <div class="content">
+                    <span class="material-symbols-outlined">
+                        call </span>
+                    <h2>Call Us</h2>
+                    <p>
+                        +91-9876543210
+                    </p>
+                </div>
+                <div class="content">
+                    <span class="material-symbols-outlined">
+                        timer </span>
+                    <h2>Our Timings</h2>
+                    <p>
+                        Mon - Sun : 10:00 AM - 07:00 PM
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="con">
+            <form action="#" method="post">
+                <div id="form">
+                    <div class="item"> <input name="name" type="text" placeholder="YOUR NAME"></div>
+                    <div class="item"><input name="email" type="email" placeholder="YOUR EMAIL"></div>
+                    <div class="item"> <input name="number" type="text" placeholder="YOUR NUMBER"></div>
+                    <div class="item"> <textarea name="message" id="message" cols="52" rows="5"
+                            placeholder="YOUR MESSAGE"></textarea></div>
+                    <input type="submit" name="button" id="button">
+
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

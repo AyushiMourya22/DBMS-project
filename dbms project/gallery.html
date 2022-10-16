@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSGHA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=PT+Serif&family=Playfair+Display:ital,wght@0,400;0,500;1,700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            font-family: 'Playfair Display', serif;
+            font-family: 'PT Serif', serif;
+            background-color: #ede0d4;
+            margin: 0px;
+            color: #3d251e;
+        }
+
+        header {
+            border: 2px solid white;
+            margin: 0px;
+            background-color: white;
+            /* position: fixed; */
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .logo img {
+            width: 59px;
+            height: 59px;
+
+        }
+
+        .nav ul {
+            overflow: auto;
+            margin-top: 20px;
+            width: 900px;
+        }
+
+        .nav li {
+            width: 150px;
+            float: left;
+            list-style: none;
+            text-align: center;
+            
+        }
+
+        .nav li a {
+            text-decoration: none;
+            color: #3d251e;
+            font-weight: bold;
+            font-size: 20px;
+
+        }
+
+        .log ul {
+            margin-right: 10px;
+            overflow: auto;
+        }
+
+        .log li {
+            float: left;
+            list-style: none;
+            margin: 5px 5px;
+
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+
+        .log li a {
+            text-decoration: none;
+            color: #3d251e;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        #active{
+            background-color:#b99976; 
+        }
+        #active a{
+            color: white;
+
+        }
+        #head {
+            text-align: center;
+            font-size: 40px;
+            margin: 0px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="">
+            </div>
+            <div class="nav">
+                <ul>
+                    <li>
+                        <a href="home.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="about.html">ABOUT</a>
+                    </li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="complaints.html">COMPLAINTS</a></li>
+                    <li id="active"> <a href="gallery.html">GALLERY</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <div class="log">
+                <ul>
+                    <li><a href="#">LOGIN</a></li>
+                    <li><a href="#">SIGNIN</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+<p id="head">GALLERY</p>
+</body>
+
+</html>

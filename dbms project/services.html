@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSGHA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=PT+Serif&family=Playfair+Display:ital,wght@0,400;0,500;1,700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            font-family: 'Playfair Display', serif;
+            font-family: 'PT Serif', serif;
+            background-color: #ede0d4;
+            margin: 0px;
+            color: #3d251e;
+        }
+
+        header {
+            border: 2px solid white;
+            margin: 0px;
+            background-color: white;
+            /* position: fixed; */
+            position: sticky;
+            top: 0px;
+            z-index: 3;
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+           
+        }
+
+        .logo img {
+            width: 59px;
+            height: 59px;
+
+        }
+
+        .nav ul {
+            overflow: auto;
+            margin-top: 20px;
+            width: 900px;
+        }
+
+        .nav li {
+            width: 150px;
+            float: left;
+            list-style: none;
+            text-align: center;
+            
+        }
+
+        .nav li a {
+            text-decoration: none;
+            color: #3d251e;
+            font-weight: bold;
+            font-size: 20px;
+
+        }
+
+        .log ul {
+            margin-right: 10px;
+            overflow: auto;
+        }
+
+        .log li {
+            float: left;
+            list-style: none;
+            margin: 5px 5px;
+
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+
+        .log li a {
+            text-decoration: none;
+            color: #3d251e;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        #active{
+            background-color:#b99976; 
+        }
+        #active a{
+            color: white;
+
+        }
+        #head {
+            text-align: center;
+            font-size: 40px;
+            margin: 0px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+       
+
+        #container {
+            /* border: 1px solid black; */
+            height: 700px;
+            margin: 20px 10px 30px 10px;
+        }
+
+        #container1 {
+            display: flex;
+            height: 350px;
+            justify-content: center;
+        }
+
+        #container2 {
+            display: flex;
+            height: 350px;
+            justify-content: center;
+        }
+
+        .item {
+            /*background-color: black;*/
+            border: 1px solid white;
+            width: 30%;
+            height: 300px;
+            margin: 20px 20px 20px 20px;
+            text-align: center;
+            background-color: white;
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        }
+
+       
+
+        .item a img {
+            width: 250px;
+            height: 180px;
+        }
+
+        
+        /* .item :hover {
+            opacity: 0.3;
+        }*/
+
+        
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="">
+            </div>
+            <div class="nav">
+                <ul>
+                    <li>
+                        <a href="home.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="about.html">ABOUT</a>
+                    </li>
+                    <li id="active"><a href="services.html">SERVICES</a></li>
+                    <li><a href="complaints.html">COMPLAINTS</a></li>
+                    <li> <a href="gallery.html">GALLERY</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <div class="log">
+                <ul>
+                    <li><a href="#">LOGIN</a></li>
+                    <li><a href="#">SIGNIN</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <p id="head">SERVICES</p>
+    <div id="container">
+        <div id="container1">
+
+            <div class="item">
+                <h2>LAN</h2>
+
+
+
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSB8-I_54QsMgVOZaWNtTS4k25v2MfYbhGCw&usqp=CAU"
+                    alt="" class="img1">
+
+
+                <!-- <div class="m1">
+                    <div class="t1">
+                        <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, atque.</p> 
+                    </div>
+                </div> -->
+            </div>
+
+            <div class="item">
+                <H2>LAUNDRY</H2>
+                <a href="#">
+
+                    <img src="https://media.istockphoto.com/photos/woman-with-ironed-clothes-in-the-laundry-picture-id1092103792?k=20&m=1092103792&s=612x612&w=0&h=Xz-NZNe6pg0n66n4DiG7rEapKvczP6Kwb7k1PMQhabU="
+                        alt="">
+                </a>
+            </div>
+            <div class="item">
+                <H2>ELECTRICITY</H2>
+                <a href="#">
+
+                    <img src="data:image/jpeg;base64,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"
+                        alt="">
+                </a>
+            </div>
+        </div>
+        <div id="container2">
+
+            <div class="item">
+                <H2>HOUSEKEEPING</H2>
+                <a href="#">
+
+                    <img src="https://thumbs.dreamstime.com/b/wife-housekeeping-cleaning-concept-happy-young-woman-blue-rubber-gloves-wiping-dust-using-mop-cleaning-floor-176828941.jpg"
+                        alt="">
+                </a>
+            </div>
+            <div class="item">
+                <H2>FURNISHED ROOMS</H2>
+                <a href="#">
+
+                    <img src="https://5.imimg.com/data5/KS/TA/GLADMIN-51614790/spacoius-well-furnished-rooms-500x500.png"
+                        alt="">
+                </a>
+            </div>
+            <div class="item">
+                <H2>SECURITY</H2>
+                <a href="#">
+
+                    <img src="https://images.jdmagicbox.com/comp/service_catalogue/female-security-guard-service-for-hostels-9999px342.x342.200611161143.m3w3-eifepdc.jpg"
+                        alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
