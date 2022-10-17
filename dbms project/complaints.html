@@ -17,8 +17,20 @@
             font-family: 'Playfair Display', serif;
             font-family: 'PT Serif', serif;
             background-color: #ede0d4;
+            
             margin: 0px;
             color: #3d251e;
+
+        }
+        .background{
+            background: url(https://images.unsplash.com/photo-1655841439110-e948a59272ed?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fGxvZ2luJTIwYnJvd24lMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+            background-repeat: no-repeat;
+            background-size: cover;
+            filter: blur(10px);
+            height: 89vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         header {
@@ -26,11 +38,15 @@
             margin: 0px;
             background-color: white;
             /* position: fixed; */
+            position: sticky;
+            top: 0px;
+            z-index: 3;
         }
 
         .navbar {
             display: flex;
             justify-content: space-between;
+
         }
 
         .logo img {
@@ -50,7 +66,7 @@
             float: left;
             list-style: none;
             text-align: center;
-            
+
         }
 
         .nav li a {
@@ -81,19 +97,91 @@
             font-weight: bold;
             font-size: 20px;
         }
-        #active{
-            background-color:#b99976; 
+
+        #active {
+            background-color: #b99976;
         }
-        #active a{
+
+        #active a {
             color: white;
 
+
         }
-        #head {
+
+        .main {
+            display: flex;
+            justify-content: space-around;
+            /* position: absolute;
+            top: 80px;
+            left: 90px; */
+
+        }
+
+        .left {
             text-align: center;
-            font-size: 40px;
-            margin: 0px;
-            margin-top: 10px;
-            font-weight: bold;
+            width: 35%;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            position: absolute;
+            top: 20%;
+            left: 5%;
+        }
+
+        .right {
+            text-align: center;
+            width: 50%;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            position: absolute;
+            top: 20%;
+            right: 5%;
+
+        }
+
+        .name {
+            display: flex;
+            justify-content: space-between;
+            width: 250px;
+            margin: auto;
+        }
+
+        .submit {
+            display: flex;
+            justify-content: center;
+            width: 250px;
+            margin: auto;
+            
+            margin-bottom: 22px;
+        }
+
+        button {
+            background-color: #3d251e;
+            color: white;
+            width: 83px;
+            height: 30px;
+        }
+        /* ul{
+            list-style: none;
+        }
+        li{
+            
+        } */
+        #ulel{
+            list-style: none;
+            padding: 0px;
+        }
+        .d{
+            border: 2px solid grey;
+            padding: 0px;
+            background-color: white;
+            margin: 10px;
+            
+        }
+        .di{
+            padding: 0px;
+        }
+        .list{
+            padding-left:5px ;
+            overflow-wrap: break-word;
+
         }
     </style>
 </head>
@@ -120,14 +208,84 @@
             </div>
             <div class="log">
                 <ul>
-                    <li><a href="#">LOGIN</a></li>
-                    <li><a href="#">SIGNIN</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
 
                 </ul>
             </div>
         </nav>
     </header>
-<p id="head">COMPLAINTS</p>
+    <div class="background"></div>
+    <div class="main">
+        <div class="left">
+            <h1>Enter your complaint</h1>
+            <form action="#" class="addForm">
+                <div class="name">
+                    <div class="label">
+
+                        <label for="name">NAME:</label>
+                    </div>
+                    <div class="input">
+
+                        <input type="text">
+                    </div>
+                </div>
+                <br>
+                <div class="name">
+                    <div class="label">
+                        <label for="roll">ROLL NO.:</label>
+                    </div>
+                    <div class="input">
+                        <input type="text">
+                    </div>
+                </div>
+                <br>
+                
+                <textarea name="area" id="area" cols="31" rows="20" placeholder="enter you complaint"></textarea>
+                <br><br>
+                <div class="submit">
+                    <div class="btn">
+                        <button type="submit" id="submit" >SUBMIT</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="right">
+            <h1>Complaints</h1>
+            <ul id="ulel"></ul>
+        </div>
+    </div>
+    <script>
+        let input = document.getElementById("area")
+        let array = []
+        submit.addEventListener("click",function() {
+            array.push(input.value)
+            let s = JSON.stringify(array)
+            localStorage.setItem("array", s)
+            renderlist()
+            input.value = ""
+            console.log(array)
+        })
+        let ulli=document.getElementById("ulel")
+        let list=[]
+        function renderlist(){
+            list=[]
+        for(let i=0;i<array.length;i++){
+            list+=`
+            <div class="d" id="ite${i}">
+            <div class="di" id="it${i}"><li list-style:"none" class="list">${i+1}) ${array[i]}
+
+                </li>
+            </div>    
+               
+                </div>
+            `
+            console.log(list)
+
+
+        }
+        ulli.innerHTML=list
+    }
+    </script>
 </body>
 
 </html>
